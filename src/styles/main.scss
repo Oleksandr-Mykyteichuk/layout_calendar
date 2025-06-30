@@ -8,7 +8,7 @@
   @each $day, $index in $start-days {
     &.calendar--start-day-#{$day} {
       .calendar__day:first-child {
-        margin-left: 101px * $index;
+        margin-left: ($day-size + $gap) * $index;
       }
     }
   }
